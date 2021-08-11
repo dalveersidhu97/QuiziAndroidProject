@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quiz_answer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="Category: General Knowledge"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/quiz_answer_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            android:text="Difficulty: easy"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/quiz_answer_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            android:text="Score: 7/10"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/quiz_answer_timeTaken"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            android:text="Time taken: 20/30 seconds"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/quiz_answer_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            android:text="Status: completed"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#ccc"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="@string/answers"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/answerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quizi</string>
+    <string name="answers">Answers</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_easy">Easy</string>
+    <string name="btn_medium">Medium</string>
+    <string name="btn_hard">Hard</string>
+</resources>

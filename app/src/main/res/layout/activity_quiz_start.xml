@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/question_num"
+        android:layout_alignParentLeft="true"
+        android:background="@color/question_counter"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:layout_gravity="center"
+        android:gravity="right"/>
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:background="@color/timer"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0:00" />
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_below="@id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading.."
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/light_red"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOptions"
+            android:layout_below="@id/question_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/light_blue"
+            android:text="@string/btn_next"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>
