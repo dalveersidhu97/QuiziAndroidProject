@@ -98,11 +98,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         int result = DB.update("QuizAnswers",contentValue, "questionId = '"+questionId+"' and option = ?",new String[]{answer});
 
-        if(result>0)
-            return updateQuiz(isCorrect, secsTaken);
-
-        Log.d("TAG", "update Quiz: False");
-        return false;
+        return updateQuiz(isCorrect, secsTaken);
 
     }
     public Boolean updateQuiz(int score, int secsTaken){
